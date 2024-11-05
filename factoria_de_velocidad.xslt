@@ -4,12 +4,6 @@
         <html> 
             <head>
                 <title>Catálogo de Coches</title>
-                <style>
-                    /* Estilos básicos opcionales */
-                    .car-card { border: 1px solid #ccc; padding: 16px; margin-bottom: 20px; }
-                    .car-title { font-size: 1.2em; font-weight: bold; margin-bottom: 10px; }
-                    .car-info, .version-info, .opinion-info, .media-info { margin-bottom: 15px; }
-                </style>
             </head>
             <body>
                 <h1>Catálogo de Coches</h1>
