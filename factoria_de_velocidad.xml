@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xslt" href="factoriaa_de_velocidad.xslt"?>
 <factoria_de_velocidad>
 <catalogo_coches>
     <coche id="1">
