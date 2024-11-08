@@ -42,6 +42,9 @@
             </opiniones>
             <media>
                 <imagen src="media/img/coche1_1.jpg"/>
+                <imagen src="media/img/coche1_2.jpg"/>
+                <imagen src="media/img/coche1_3.jpg"/>
+                <imagen src="media/img/coche1_4.jpg"/>
             </media>
         </coche>
         <coche id="2">
