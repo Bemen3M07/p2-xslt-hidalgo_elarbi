@@ -47,9 +47,11 @@
             <div class="opinion-info">
                 <h3>Opiniones</h3>
                 <xsl:for-each select="opiniones/opinion">
-                    <p><strong><xsl:value-of select="@autor" /></strong> - <xsl:value-of select="fecha" /></p>
-                    <p>Calificación: <xsl:value-of select="calificacion" /></p>
-                    <p><xsl:value-of select="comentario" /></p>
+                    <article>
+                        <p><strong><xsl:value-of select="@autor" /></strong> - <xsl:value-of select="fecha" /></p>
+                        <p>Calificación: <xsl:value-of select="calificacion" /></p>
+                        <p><xsl:value-of select="comentario" /></p>
+                    </article>
                 </xsl:for-each>
             </div>
 

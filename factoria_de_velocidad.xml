@@ -3,7 +3,7 @@
 <factoria_de_velocidad>
     <catalogo_coches>
         <coche id="1">
-            <marca>Ford</marca>
+            <marca>Ford </marca>
             <modelo>Mustang GT</modelo>
             <año>2022</año>
             <versiones>
@@ -48,7 +48,7 @@
             </media>
         </coche>
         <coche id="2">
-            <marca>Tesla</marca>
+            <marca>Tesla </marca>
             <modelo>Model S Plaid</modelo>
             <año>2023</año>
             <versiones>
@@ -90,7 +90,7 @@
             </media>
         </coche>
         <coche id="3">
-            <marca>Audi</marca>
+            <marca>Audi </marca>
             <modelo>RS 6 Avant GT</modelo>
             <año>2024</año>
             <versiones>
