@@ -70,14 +70,14 @@ li {
 
 /* Estilo para las imágenes de los coches */
 img {
-    width: 100%;           /* Asegura que las imágenes ocupen todo el ancho de su contenedor */
-    height: auto;          /* Mantiene la proporción de la imagen */
+    width: auto;           /* Asegura que las imágenes ocupen todo el ancho de su contenedor */
+    height: 100%;          /* Mantiene la proporción de la imagen */
     max-width: 300px;      /* Limita el ancho máximo de las imágenes */
     max-height: 200px;     /* Limita la altura máxima de las imágenes */
     object-fit: cover;     /* Mantiene la proporción de la imagen, recortando si es necesario */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 15px;
+    margin: 15px;
 }
 
 /* Estilo de los enlaces */
