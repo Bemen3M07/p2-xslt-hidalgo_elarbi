@@ -5,7 +5,7 @@
             <head>
                 <title>Catálogo de Coches</title>
                 <!-- Enlazamos el archivo CSS externo -->
-                <link rel="stylesheet" type="text/css" href="styles.css"/>
+                <link rel="stylesheet" type="text/css" href="media/css/styles.css"/>
             </head>
             <body>
                 <h1>Catálogo de Coches</h1>
