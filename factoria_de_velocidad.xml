@@ -1,171 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="factoria_de_velocidad.xslt"?>
 <factoria_de_velocidad>
-<catalogo_coches>
-    <coche id="1">
-        <marca>Ford</marca>
-        <modelo>Mustang GT</modelo>
-        <año>2022</año>
-        <versiones>
-            <version nombre="GT Premium">
-                <precio moneda="USD">48000</precio>
-                <color>Rojo</color>
-                <motor>
-                    <tipo>V8</tipo>
-                    <cilindrada>5.0L</cilindrada>
-                    <potencia unidad="HP">450</potencia>
-                </motor>
-                <equipamiento>
-                    <interior>Cuero premium</interior>
-                    <pantalla_tactil pulgadas="8">Sí</pantalla_tactil>
-                    <sonido marca="Bang and Olufsen">Sí</sonido>
-                </equipamiento>
-            </version>
-            <version nombre="GT Fastback">
-                <precio moneda="USD">42000</precio>
-                <color>Azul</color>
-                <motor>
-                    <tipo>V8</tipo>
-                    <cilindrada>5.0L</cilindrada>
-                    <potencia unidad="HP">450</potencia>
-                </motor>
-                <equipamiento>
-                    <interior>Cuero estándar</interior>
-                    <pantalla_tactil pulgadas="8">No</pantalla_tactil>
-                    <sonido marca="Sony">Sí</sonido>
-                </equipamiento>
-            </version>
-        </versiones>
-        <concesionarios>
-            <concesionario nombre="AutoWorld" ciudad="Nueva York" disponibilidad="Disponible" />
-            <concesionario nombre="Ford Center" ciudad="Los Ángeles" disponibilidad="Preorden" />
-        </concesionarios>
-        <opiniones>
-            <opinion autor="Juan Perez">
-                <fecha>2023-06-01</fecha>
-                <calificacion>4.5</calificacion>
-                <comentario>Un coche impresionante con gran potencia, aunque consume bastante combustible.</comentario>
-            </opinion>
-            <opinion autor="Laura Gómez">
-                <fecha>2023-07-15</fecha>
-                <calificacion>4.7</calificacion>
-                <comentario>Me encanta el diseño y la fuerza del motor. Es mi coche soñado.</comentario>
-            </opinion>
-        </opiniones>
-        <media>
-            <imagen url="https://example.com/imagenes/ford_mustang_gt.jpg" descripcion="Ford Mustang GT en color rojo" />
-            <video url="https://example.com/videos/ford_mustang_review.mp4" descripcion="Revisión en profundidad del Mustang GT" />
-        </media>
-    </coche>
-    <coche id="2">
-        <marca>Tesla</marca>
-        <modelo>Model S Plaid</modelo>
-        <año>2023</año>
-        <versiones>
-            <version nombre="Plaid Standard">
-                <precio moneda="USD">120000</precio>
-                <color>Blanco</color>
-                <motor>
-                    <tipo>Eléctrico</tipo>
-                    <potencia unidad="HP">1020</potencia>
-                    <autonomia unidad="km">637</autonomia>
-                </motor>
-                <equipamiento>
-                    <interior>Cuero vegano</interior>
-                    <pantalla_tactil pulgadas="17">Sí</pantalla_tactil>
-                    <sonido marca="Tesla Premium Audio">Sí</sonido>
-                </equipamiento>
-            </version>
-            <version nombre="Plaid Ultra">
-                <precio moneda="USD">130000</precio>
-                <color>Negro</color>
-                <motor>
-                    <tipo>Eléctrico</tipo>
-                    <potencia unidad="HP">1020</potencia>
-                    <autonomia unidad="km">637</autonomia>
-                </motor>
-                <equipamiento>
-                    <interior>Cuero vegano premium</interior>
-                    <pantalla_tactil pulgadas="17">Sí</pantalla_tactil>
-                    <sonido marca="Tesla Premium Audio">Sí</sonido>
-                </equipamiento>
-            </version>
-        </versiones>
-        <concesionarios>
-            <concesionario nombre="Tesla Center" ciudad="San Francisco" disponibilidad="Disponible" />
-            <concesionario nombre="Tesla LA" ciudad="Los Ángeles" disponibilidad="Agotado" />
-        </concesionarios>
-        <opiniones>
-            <opinion autor="Carlos Ruiz">
-                <fecha>2023-08-05</fecha>
-                <calificacion>5.0</calificacion>
-                <comentario>Una obra maestra de la tecnología, con una autonomía y rendimiento impresionantes.</comentario>
-            </opinion>
-            <opinion autor="Ana Rivera">
-                <fecha>2023-09-10</fecha>
-                <calificacion>4.8</calificacion>
-                <comentario>El coche perfecto para quienes buscamos velocidad y tecnología de punta.</comentario>
-            </opinion>
-        </opiniones>
-        <media>
-            <imagen url="https://example.com/imagenes/tesla_model_s_plaid.jpg" descripcion="Tesla Model S Plaid en color blanco" />
-            <video url="https://example.com/videos/tesla_model_s_review.mp4" descripcion="Prueba de manejo del Tesla Model S Plaid" />
-        </media>
-    </coche>
-    <coche id="2">
-        <marca>Tesla</marca>
-        <modelo>Model S Plaid</modelo>
-        <año>2023</año>
-        <versiones>
-            <version nombre="Plaid Standard">
-                <precio moneda="USD">120000</precio>
-                <color>Blanco</color>
-                <motor>
-                    <tipo>Eléctrico</tipo>
-                    <potencia unidad="HP">1020</potencia>
-                    <autonomia unidad="km">637</autonomia>
-                </motor>
-                <equipamiento>
-                    <interior>Cuero vegano</interior>
-                    <pantalla_tactil pulgadas="17">Sí</pantalla_tactil>
-                    <sonido marca="Tesla Premium Audio">Sí</sonido>
-                </equipamiento>
-            </version>
-            <version nombre="Plaid Ultra">
-                <precio moneda="USD">130000</precio>
-                <color>Negro</color>
-                <motor>
-                    <tipo>Eléctrico</tipo>
-                    <potencia unidad="HP">1020</potencia>
-                    <autonomia unidad="km">637</autonomia>
-                </motor>
-                <equipamiento>
-                    <interior>Cuero vegano premium</interior>
-                    <pantalla_tactil pulgadas="17">Sí</pantalla_tactil>
-                    <sonido marca="Tesla Premium Audio">Sí</sonido>
-                </equipamiento>
-            </version>
-        </versiones>
-        <concesionarios>
-            <concesionario nombre="Tesla Center" ciudad="San Francisco" disponibilidad="Disponible" />
-            <concesionario nombre="Tesla LA" ciudad="Los Ángeles" disponibilidad="Agotado" />
-        </concesionarios>
-        <opiniones>
-            <opinion autor="Carlos Ruiz">
-                <fecha>2023-08-05</fecha>
-                <calificacion>5.0</calificacion>
-                <comentario>Una obra maestra de la tecnología, con una autonomía y rendimiento impresionantes.</comentario>
-            </opinion>
-            <opinion autor="Ana Rivera">
-                <fecha>2023-09-10</fecha>
-                <calificacion>4.8</calificacion>
-                <comentario>El coche perfecto para quienes buscamos velocidad y tecnología de punta.</comentario>
-            </opinion>
-        </opiniones>
-        <media>
-            <imagen url="https://example.com/imagenes/tesla_model_s_plaid.jpg" descripcion="Tesla Model S Plaid en color blanco" />
-            <video url="https://example.com/videos/tesla_model_s_review.mp4" descripcion="Prueba de manejo del Tesla Model S Plaid" />
-        </media>
-    </coche>
-</catalogo_coches>
+    <catalogo_coches>
+        <coche id="1">
+            <marca>Ford</marca>
+            <modelo>Mustang GT</modelo>
+            <año>2022</año>
+            <versiones>
+                <version nombre="GT Premium">
+                    <precio moneda="EUR">45000</precio>
+                    <color>Rojo</color>
+                    <motor>
+                        <tipo>V8</tipo>
+                        <cilindrada>5.0L</cilindrada>
+                        <potencia unidad="HP">450</potencia>
+                        <autonomia unidad="km">637</autonomia>
+                    </motor>
+                </version>
+                <version nombre="GT Fastback">
+                    <precio moneda="EUR">39000</precio>
+                    <color>Azul</color>
+                    <motor>
+                        <tipo>V8</tipo>
+                        <cilindrada>5.0L</cilindrada>
+                        <potencia unidad="HP">450</potencia>
+                        <autonomia unidad="km">637</autonomia>
+                    </motor>
+                </version>
+            </versiones>
+            <opiniones>
+                <opinion autor="Juan Perez">
+                    <fecha>2023-06-01</fecha>
+                    <calificacion>4.5</calificacion>
+                    <comentario>Un coche impresionante con gran potencia, aunque consume bastante combustible.</comentario>
+                </opinion>
+                <opinion autor="Laura Gómez">
+                    <fecha>2023-07-15</fecha>
+                    <calificacion>4.7</calificacion>
+                    <comentario>Me encanta el diseño y la fuerza del motor. Es mi coche soñado.</comentario>
+                </opinion>
+            </opiniones>
+            <media>
+                <imagen url="https://example.com/imagenes/ford_mustang_gt.jpg" descripcion="Ford Mustang GT en color rojo" />
+            </media>
+        </coche>
+        <coche id="2">
+            <marca>Tesla</marca>
+            <modelo>Model S Plaid</modelo>
+            <año>2023</año>
+            <versiones>
+                <version nombre="Plaid Standard">
+                    <precio moneda="EUR">112000</precio>
+                    <color>Blanco</color>
+                    <motor>
+                        <tipo>Eléctrico</tipo>
+                        <potencia unidad="HP">1020</potencia>
+                        <autonomia unidad="km">637</autonomia>
+                    </motor>
+                </version>
+                <version nombre="Plaid Ultra">
+                    <precio moneda="EUR">120000</precio>
+                    <color>Rojo</color>
+                    <motor>
+                        <tipo>Eléctrico</tipo>
+                        <potencia unidad="HP">1020</potencia>
+                        <autonomia unidad="km">637</autonomia>
+                    </motor>
+                </version>
+            </versiones>
+            <opiniones>
+                <opinion autor="Carlos Ruiz">
+                    <fecha>2023-08-05</fecha>
+                    <calificacion>5.0</calificacion>
+                    <comentario>Una obra maestra de la tecnología, con una autonomía y rendimiento impresionantes.</comentario>
+                </opinion>
+                <opinion autor="Ana Rivera">
+                    <fecha>2023-09-10</fecha>
+                    <calificacion>4.8</calificacion>
+                    <comentario>El coche perfecto para quienes buscamos velocidad y tecnología de punta.</comentario>
+                </opinion>
+            </opiniones>
+            <media>
+                <imagen url="https://example.com/imagenes/tesla_model_s_plaid.jpg" descripcion="Tesla Model S Plaid en color blanco" />
+            </media>
+        </coche>
+        <coche id="3">
+            <marca>Audi</marca>
+            <modelo>RS 6 Avant GT</modelo>
+            <año>2024</año>
+            <versiones>
+                <version nombre="GT">
+                    <precio moneda="EUR">266750</precio>
+                    <color>Negro</color>
+                    <motor>
+                        <tipo>Gasolina</tipo>
+                        <potencia unidad="HP">630</potencia>
+                        <autonomia unidad="km">599</autonomia>
+                    </motor>
+                </version>
+            </versiones>
+            <opiniones>
+                <opinion autor="Carlos Ruiz">
+                    <fecha>2023-08-05</fecha>
+                    <calificacion>5.0</calificacion>
+                    <comentario>Una obra maestra de la tecnología, con una autonomía y rendimiento impresionantes.</comentario>
+                </opinion>
+                <opinion autor="Ana Rivera">
+                    <fecha>2023-09-10</fecha>
+                    <calificacion>4.8</calificacion>
+                    <comentario>El coche perfecto para quienes buscamos velocidad y tecnología de punta.</comentario>
+                </opinion>
+            </opiniones>
+            <media>
+                <imagen url="https://example.com/imagenes/tesla_model_s_plaid.jpg" descripcion="Tesla Model S Plaid en color blanco" />
+            </media>
+        </coche>
+    </catalogo_coches>
 </factoria_de_velocidad>
