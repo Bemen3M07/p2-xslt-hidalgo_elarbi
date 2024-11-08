@@ -1,52 +1,126 @@
 /* Archivo: styles.css */
 
+/* Reajuste de la fuente base */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilo del título principal */
 h1 {
     text-align: center;
-    color: #333;
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-top: 50px;
 }
 
+/* Contenedor principal de los coches */
 .car-card {
-    border: 1px solid #ddd;
-    padding: 16px;
-    margin: 16px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efecto al pasar el ratón sobre el contenedor de coche */
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Título del coche */
 .car-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #0056b3;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #3498db;
+    margin-bottom: 12px;
 }
 
+/* Sección de información general */
 .car-info, .version-info, .opinion-info, .media-info {
-    margin-top: 12px;
+    margin-top: 20px;
 }
 
+/* Títulos de las secciones */
 .car-info h3, .version-info h3, .opinion-info h3, .media-info h3 {
-    color: #333;
-    font-size: 1.2em;
+    color: #34495e;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
 }
 
+/* Estilo de las listas (para concesionarios) */
 ul {
-    padding-left: 20px;
+    list-style: none;
+    padding-left: 0;
 }
 
+li {
+    background: #ecf0f1;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+/* Imagen de los coches */
 img {
-    max-width: 200px;
-    max-height: 150px;
-    margin-top: 8px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
 }
 
+/* Estilo de los enlaces */
 a {
-    color: #0056b3;
+    color: #3498db;
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 a:hover {
+    color: #2980b9;
     text-decoration: underline;
 }
+
+/* Estilos para el precio */
+.version-info .precio {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Caja de opiniones */
+.opinion-info p {
+    background-color: #f9fafb;
+    padding: 10px;
+    border-left: 5px solid #3498db;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+/* Estilo de la caja de versiones */
+.version-info div {
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Fondo general */
+body {
+    background-color: #f4f7fb;
+}
+
+/* Estilos adicionales para mejorar la disposición */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
