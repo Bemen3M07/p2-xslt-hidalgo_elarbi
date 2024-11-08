@@ -85,6 +85,8 @@
             </opiniones>
             <media>
                 <imagen src="media/img/coche2_1.jpg"/>
+                <imagen src="media/img/coche2_2.jpg"/>
+                <imagen src="media/img/coche2_3.jpg"/>
             </media>
         </coche>
         <coche id="3">
@@ -116,6 +118,8 @@
             </opiniones>
             <media>
                 <imagen src="media/img/coche3_1.jpg"/>
+                <imagen src="media/img/coche3_2.jpg"/>
+                <imagen src="media/img/coche3_3.jpg"/>
             </media>
         </coche>
     </catalogo_coches>
