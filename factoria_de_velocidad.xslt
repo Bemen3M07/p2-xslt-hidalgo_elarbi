@@ -23,20 +23,13 @@
             <div class="car-title">
                 <xsl:value-of select="marca" /> <xsl:value-of select="modelo" /> (<xsl:value-of select="año" />)
             </div>
-            <div class="car-info">
-                <h3>Concesionarios</h3>
-                <ul>
-                    <xsl:for-each select="concesionarios/concesionario">
-                        <li><xsl:value-of select="@nombre" /> - <xsl:value-of select="@ciudad" /> (<xsl:value-of select="@disponibilidad" />)</li>
-                    </xsl:for-each>
-                </ul>
-            </div>
-
             <div class="version-info">
                 <h3>Versiones</h3>
                 <xsl:for-each select="versiones/version">
                     <div>
-                        <strong><xsl:value-of select="@nombre" /></strong> - Precio: <xsl:value-of select="precio" /> <xsl:value-of select="precio/@moneda" />
+                        <strong><xsl:value-of select="@nombre" /></strong> - Precio: 
+                        <xsl:value-of select="precio" /> 
+                        <xsl:value-of select="precio/@moneda" />
                         <p>Color: <xsl:value-of select="color" /></p>
                         <p>Motor: <xsl:value-of select="motor/tipo" />
                             <xsl:if test="motor/cilindrada">
@@ -63,11 +56,7 @@
             <div class="media-info">
                 <h3>Media</h3>
                 <xsl:for-each select="media/imagen">
-                    <img src="{@url}" alt="{@descripcion}"/>
-                    <p><xsl:value-of select="@descripcion" /></p>
-                </xsl:for-each>
-                <xsl:for-each select="media/video">
-                    <p><a href="{@url}">Ver video: <xsl:value-of select="@descripcion" /></a></p>
+                    <img src="{@src}" alt="Imagen del coche"/>
                 </xsl:for-each>
             </div>
         </div>
