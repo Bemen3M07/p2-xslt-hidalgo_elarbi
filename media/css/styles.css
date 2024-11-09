@@ -3,7 +3,7 @@
 /* Reajuste de la fuente base */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f7fb;
+    background-color: #000000; /* Fondo negro */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,14 +12,14 @@ body {
 /* Estilo del título principal */
 h1 {
     text-align: center;
-    color: #2c3e50;
+    color: #ffffff; /* Texto blanco */
     font-size: 2.5em;
     margin: 50px;
 }
 
 /* Contenedor principal de los coches */
 .car-card {
-    background-color: #ffffff;
+    background-color: #1a1a1a; /* Fondo gris oscuro */
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin: 20px;
@@ -37,7 +37,7 @@ h1 {
 .car-title {
     font-size: 1.8em;
     font-weight: 600;
-    color: #3498db;
+    color: #e60000; /* Rojo vibrante */
     margin-bottom: 12px;
 }
 
@@ -48,10 +48,10 @@ h1 {
 
 /* Títulos de las secciones */
 .car-info h3, .version-info h3, .opinion-info h3, .media-info h3 {
-    color: #34495e;
+    color: #f0f0f0; /* Texto blanco */
     font-size: 1.4em;
     margin-bottom: 10px;
-    border-bottom: 2px solid #ecf0f1;
+    border-bottom: 2px solid #333333;
     padding-bottom: 5px;
 }
 
@@ -62,19 +62,20 @@ ul {
 }
 
 li {
-    background: #ecf0f1;
+    background: #333333;
     padding: 8px;
     border-radius: 5px;
     margin-bottom: 8px;
+    color: #f0f0f0; /* Texto blanco */
 }
 
 /* Estilo para las imágenes de los coches */
 img {
-    width: auto;           /* Asegura que las imágenes ocupen todo el ancho de su contenedor */
-    height: 100%;          /* Mantiene la proporción de la imagen */
-    max-width: 300px;      /* Limita el ancho máximo de las imágenes */
-    max-height: 200px;     /* Limita la altura máxima de las imágenes */
-    object-fit: cover;     /* Mantiene la proporción de la imagen, recortando si es necesario */
+    width: auto;
+    height: 100%;
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 15px;
@@ -82,14 +83,14 @@ img {
 
 /* Estilo de los enlaces */
 a {
-    color: #3498db;
+    color: #e60000; /* Rojo vibrante */
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #2980b9;
+    color: #ff3333; /* Rojo claro en hover */
     text-decoration: underline;
 }
 
@@ -102,23 +103,26 @@ a:hover {
 
 /* Caja de opiniones */
 .opinion-info article {
-    background-color: #f9fafb;
+    background-color: #2e2e2e; /* Gris oscuro */
     padding: 10px;
-    border-left: 5px solid #3498db;
+    border-left: 5px solid #e60000; /* Rojo para borde izquierdo */
     margin-bottom: 15px;
     font-size: 1.1em;
+    color: #f0f0f0; /* Texto blanco */
 }
 
 /* Estilo de la caja de versiones */
 .version-info div {
-    background-color: #f9fafb;
+    background-color: #2e2e2e; /* Gris oscuro */
     padding: 15px;
     border-radius: 8px;
+    margin-bottom: 20px;
+    color: #f0f0f0; /* Texto blanco */
 }
 
 /* Fondo general */
 body {
-    background-color: #f4f7fb;
+    background-color: #000000; /* Fondo negro */
 }
 
 /* Estilos adicionales para mejorar la disposición */
@@ -126,4 +130,3 @@ body {
     width: 80%;
     margin: 0 auto;
 }
-
