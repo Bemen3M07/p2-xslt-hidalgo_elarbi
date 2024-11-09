@@ -61,6 +61,10 @@
                     <img src="{@src}" alt="Imagen del coche"/>
                 </xsl:for-each>
             </div>
+            <div>
+                <!-- Enlace al formulario de compra con el ID del coche como parámetro -->
+                <a href="formulario_compra.php?cocheId={@id}">Comprar este coche</a>
+            </div>
         </div>
     </xsl:template>
 </xsl:stylesheet>
