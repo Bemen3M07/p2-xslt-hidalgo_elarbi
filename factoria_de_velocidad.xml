@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="factoria_de_velocidad.xslt"?>
 <factoria_de_velocidad>
     <catalogo_coches>
+        <!-- Ford Mustang GT -->
         <coche id="1">
-            <marca>Ford </marca>
+            <marca>Ford</marca>
             <modelo>Mustang GT</modelo>
             <año>2022</año>
             <versiones>
@@ -47,8 +46,10 @@
                 <imagen src="media/img/coche1_4.jpg"/>
             </media>
         </coche>
+        
+        <!-- Tesla Model S Plaid -->
         <coche id="2">
-            <marca>Tesla </marca>
+            <marca>Tesla</marca>
             <modelo>Model S Plaid</modelo>
             <año>2023</año>
             <versiones>
@@ -89,8 +90,10 @@
                 <imagen src="media/img/coche2_3.jpg"/>
             </media>
         </coche>
+        
+        <!-- Audi RS 6 Avant GT -->
         <coche id="3">
-            <marca>Audi </marca>
+            <marca>Audi</marca>
             <modelo>RS 6 Avant GT</modelo>
             <año>2024</año>
             <versiones>
@@ -120,6 +123,136 @@
                 <imagen src="media/img/coche3_1.jpg"/>
                 <imagen src="media/img/coche3_2.jpg"/>
                 <imagen src="media/img/coche3_3.jpg"/>
+            </media>
+        </coche>
+
+        <!-- Chevrolet Corvette Stingray -->
+        <coche id="4">
+            <marca>Chevrolet</marca>
+            <modelo>Corvette Stingray</modelo>
+            <año>2023</año>
+            <versiones>
+                <version nombre="Stingray Coupe">
+                    <precio moneda="EUR">75000</precio>
+                    <color>Amarillo</color>
+                    <motor>
+                        <tipo>V8</tipo>
+                        <cilindrada>6.2L</cilindrada>
+                        <potencia unidad="HP">495</potencia>
+                        <autonomia unidad="km">482</autonomia>
+                    </motor>
+                </version>
+                <version nombre="Stingray Convertible">
+                    <precio moneda="EUR">79000</precio>
+                    <color>Negro</color>
+                    <motor>
+                        <tipo>V8</tipo>
+                        <cilindrada>6.2L</cilindrada>
+                        <potencia unidad="HP">495</potencia>
+                        <autonomia unidad="km">482</autonomia>
+                    </motor>
+                </version>
+            </versiones>
+            <opiniones>
+                <opinion autor="Daniel López">
+                    <fecha>2023-05-20</fecha>
+                    <calificacion>4.9</calificacion>
+                    <comentario>Un deportivo accesible y con prestaciones increíbles para su precio.</comentario>
+                </opinion>
+                <opinion autor="Sofía Rivas">
+                    <fecha>2023-07-07</fecha>
+                    <calificacion>4.7</calificacion>
+                    <comentario>El diseño es espectacular y el motor responde de manera sobresaliente.</comentario>
+                </opinion>
+            </opiniones>
+            <media>
+                <imagen src="media/img/coche4_1.jpg"/>
+                <imagen src="media/img/coche4_2.jpg"/>
+            </media>
+        </coche>
+
+        <!-- BMW M3 Competition -->
+        <coche id="5">
+            <marca>BMW</marca>
+            <modelo>M3 Competition</modelo>
+            <año>2023</año>
+            <versiones>
+                <version nombre="Competition xDrive">
+                    <precio moneda="EUR">98000</precio>
+                    <color>Blanco</color>
+                    <motor>
+                        <tipo>Gasolina</tipo>
+                        <cilindrada>3.0L</cilindrada>
+                        <potencia unidad="HP">503</potencia>
+                        <autonomia unidad="km">510</autonomia>
+                    </motor>
+                </version>
+            </versiones>
+            <opiniones>
+                <opinion autor="Javier Mendoza">
+                    <fecha>2023-06-30</fecha>
+                    <calificacion>4.8</calificacion>
+                    <comentario>Excelente combinación de lujo y deportividad.</comentario>
+                </opinion>
+                <opinion autor="Lucía Ferrer">
+                    <fecha>2023-08-12</fecha>
+                    <calificacion>4.7</calificacion>
+                    <comentario>Potencia impresionante y un diseño que atrae todas las miradas.</comentario>
+                </opinion>
+            </opiniones>
+            <media>
+                <imagen src="media/img/coche5_1.jpg"/>
+                <imagen src="media/img/coche5_2.jpg"/>
+                <imagen src="media/img/coche5_3.jpg"/>
+                <imagen src="media/img/coche5_4.jpg"/>
+            </media>
+        </coche>
+
+        <!-- Porsche 911 Carrera -->
+        <coche id="6">
+            <marca>Porsche</marca>
+            <modelo>911 Carrera</modelo>
+            <año>2023</año>
+            <versiones>
+                <version nombre="Carrera">
+                    <precio moneda="EUR">120000</precio>
+                    <color>Gris</color>
+                    <motor>
+                        <tipo>Gasolina</tipo>
+                        <cilindrada>3.0L</cilindrada>
+                        <potencia unidad="HP">379</potencia>
+                        <autonomia unidad="km">670</autonomia>
+                    </motor>
+                </version>
+                <version nombre="Carrera Cabriolet">
+                    <precio moneda="EUR">130000</precio>
+                    <color>Azul</color>
+                    <motor>
+                        <tipo>Gasolina</tipo>
+                        <cilindrada>3.0L</cilindrada>
+                        <potencia unidad="HP">379</potencia>
+                        <autonomia unidad="km">670</autonomia>
+                    </motor>
+                </version>
+            </versiones>
+            <opiniones>
+                <opinion autor="Carlos Martín">
+                    <fecha>2023-09-14</fecha>
+                    <calificacion>5.0</calificacion>
+                    <comentario>El icónico 911 con una elegancia y potencia de alto nivel.</comentario>
+                </opinion>
+                <opinion autor="Isabel García">
+                    <fecha>2023-10-05</fecha>
+                    <calificacion>4.9</calificacion>
+                    <comentario>Increíble desempeño en carretera, perfecto para los amantes de Porsche.</comentario>
+                </opinion>
+            </opiniones>
+            <media>
+                <imagen src="media/img/coche6_1.jpg"/>
+                <imagen src="media/img/coche6_2.jpg"/>
+                <imagen src="media/img/coche6_3.jpg"/>
+                <imagen src="media/img/coche6_4.jpg"/>
+                <imagen src="media/img/coche6_5.jpg"/>
             </media>
         </coche>
     </catalogo_coches>
