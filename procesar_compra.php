@@ -8,18 +8,29 @@ $version = $_POST['version'];
 $pago = $_POST['pago'];
 $comentarios = $_POST['comentarios'];
 
-// Procesar la compra (aquí puedes añadir código para almacenar o enviar los datos)
-// Ejemplo: Guardar en una base de datos o enviar un correo electrónico
-
 // Mostrar un mensaje de confirmación
-echo "<h1>Compra realizada con éxito</h1>";
-echo "<p>Gracias, $nombre. Su solicitud de compra ha sido procesada.</p>";
-echo "<p>Detalles:</p>";
-echo "<ul>";
-echo "<li><strong>Coche:</strong> $coche</li>";
-echo "<li><strong>Versión:</strong> $version</li>";
-echo "<li><strong>Forma de Pago:</strong> $pago</li>";
-echo "<li><strong>Comentarios:</strong> $comentarios</li>";
-echo "</ul>";
-echo "<a href='factoria_de_velocidad.xml'>Volver al catálogo</a>";
+echo "
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Compra Realizada</title>
+    <link rel='stylesheet' href='media/css/styles.css'>
+</head>
+<body>
+    <div class='car-details confirmation'>
+        <h1>Compra realizada con éxito</h1>
+        <p>Gracias, $nombre. Su solicitud de compra ha sido procesada con éxito.</p>
+        <h3>Detalles de la Compra</h3>
+        <ul class='confirmation-list'>
+            <li><strong>Coche:</strong> $coche</li>
+            <li><strong>Versión:</strong> $version</li>
+            <li><strong>Forma de Pago:</strong> $pago</li>
+            <li><strong>Comentarios:</strong> $comentarios</li>
+        </ul>
+        <a href='factoria_de_velocidad.xml' class='back-button'>Volver al catálogo</a>
+    </div>
+</body>
+</html>
+";
 ?>

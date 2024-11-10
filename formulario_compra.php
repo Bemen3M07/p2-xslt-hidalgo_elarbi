@@ -7,22 +7,30 @@ $xml = simplexml_load_file('factoria_de_velocidad.xml');
 
 // Buscar el coche por ID
 $coche = $xml->xpath("/factoria_de_velocidad/catalogo_coches/coche[@id='$cocheId']")[0];
+$imagen_src = (string) $coche->media->imagen[0]->attributes()->src;
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Formulario de Compra</title>
     <link rel="stylesheet" href="media/css/styles.css">
 </head>
+
 <body>
     <h1>Formulario de Compra del Coche</h1>
-    
     <div class="car-details">
         <h2><?php echo $coche->marca . ' ' . $coche->modelo . ' (' . $coche->año . ')'; ?></h2>
-        <p><strong>Precio:</strong> <?php echo $coche->versiones->version[0]->precio . ' ' . $coche->versiones->version[0]->precio['moneda']; ?></p>
+        <img src="<?php echo $imagen_src; ?>" alt="Imagen del coche seleccionado">
+        <p><strong>Precio:</strong>
+            <?php echo $coche->versiones->version[0]->precio . ' ' . $coche->versiones->version[0]->precio['moneda']; ?>
+        </p>
         <p><strong>Color:</strong> <?php echo $coche->versiones->version[0]->color; ?></p>
-        <p><strong>Motor:</strong> <?php echo $coche->versiones->version[0]->motor->tipo; ?>, <?php echo $coche->versiones->version[0]->motor->cilindrada; ?>, <?php echo $coche->versiones->version[0]->motor->potencia . ' ' . $coche->versiones->version[0]->motor->potencia['unidad']; ?></p>
+        <p><strong>Motor:</strong> <?php echo $coche->versiones->version[0]->motor->tipo; ?>,
+            <?php echo $coche->versiones->version[0]->motor->cilindrada; ?>,
+            <?php echo $coche->versiones->version[0]->motor->potencia . ' ' . $coche->versiones->version[0]->motor->potencia['unidad']; ?>
+        </p>
     </div>
 
     <h3>Detalles de Compra</h3>
@@ -32,7 +40,7 @@ $coche = $xml->xpath("/factoria_de_velocidad/catalogo_coches/coche[@id='$cocheId
 
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
-        
+
         <label for="correo">Correo Electrónico:</label>
         <input type="email" id="correo" name="correo" required>
 
@@ -52,4 +60,5 @@ $coche = $xml->xpath("/factoria_de_velocidad/catalogo_coches/coche[@id='$cocheId
         <button type="submit">Realizar Compra</button>
     </form>
 </body>
+
 </html>
